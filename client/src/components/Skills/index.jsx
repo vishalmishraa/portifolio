@@ -1,4 +1,4 @@
-import React from 'react'
+
 import styled from 'styled-components'
 import { skills } from '../../data/constants'
 
@@ -129,11 +129,11 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
+            <Skill key={skill}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
-                  <SkillItem>
+                  <SkillItem key={item}>
                     <SkillImage src={item.image}/>
                     {item.name}
                   </SkillItem>

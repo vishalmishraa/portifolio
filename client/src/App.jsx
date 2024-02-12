@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { useState } from "react";
-import { darkTheme, lightTheme } from './utils/Themes.js'
+import { darkTheme, lightTheme } from './utils/Themes.jsx'
 import Navbar from "./components/Navbar";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -14,6 +14,7 @@ import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -25,7 +26,10 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
 function App() {
+
+
   const [darkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
@@ -52,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
