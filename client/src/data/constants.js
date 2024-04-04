@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/vishalmishraa",
   resume:
-    "https://drive.google.com/file/d/12V9H7lD-Ko3V_ZuRnWuPtttEOAqGvES7/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1MQzf9lZ9gjtxfCjZ4Y9VtUVyhWiqT2U2/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/vishal022",
   twitter: "https://twitter.com/_vishalmishra1",
   insta: "https://www.instagram.com/_vishalmishraa/",
@@ -175,6 +175,24 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Food Delivery API",
+    description:
+    `A REST API backend for a food delivery app using Node.js. The primary focus is on a dynamic pricing module to calculate the total cost of food delivery based on various factors.\n
+    It Calculates delivery costs based on:
+    Zone
+    Item type (perishable/non-perishable)
+    Distance
+    Base distance and price
+    Per km price
+    Returns the total delivery price in the API response. Deployed the swagger UI for API documentation on DigitalOcean.` ,
+    image: "https://firebasestorage.googleapis.com/v0/b/mern-estate-ffd5d.appspot.com/o/1712240571636Screenshot%202024-04-04%20at%207.49.54%20PM.png?alt=media&token=4d2e110e-bec6-4699-a2ec-605501cbd58c",
+    tags: ["NodeJS",'express','drizzle','postgresDB','Swagger UI'],
+    github: "https://github.com/vishalmishraa/food-delivery",
+    webapp: "https://lobster-app-rabce.ondigitalocean.app/#/",
+    
+  },
+  {
+    id: 1,
     title: "ChatPDF - AI",
     description:"I developed a chat-pdf website enabling users to chat with PDFs. Uploaded PDFs are stored on AWS S3, with metadata extracted and text embedded in Pinecone DB. User and chat data are managed via NeonDB, utilizing Drizzle ORM.. Gemini-AI API facilitates chat and text embedding, tailored through custom prompts for PDF-related responses.",
       image: "https://firebasestorage.googleapis.com/v0/b/mern-estate-ffd5d.appspot.com/o/1708587914283Screenshot%202024-02-22%20at%201.12.46%20PM.png?alt=media&token=39bf9e59-e755-4181-82e4-c9b0f68445d8",
@@ -184,7 +202,7 @@ export const projects = [
 
   },
   {
-    id: 1,
+    id: 2,
     title: "F Y D H",
     description:
       "F Y D H (Find Your Dream Home) is a MongoDB-backed real estate platform built with ReactJS, Redux, and Tailwind CSS. Offering an intuitive property search, interactive maps, and user profiles, it ensures a seamless and visually appealing experience. F Y D H redefines real estate browsing, making finding dream homes effortless.",
@@ -192,19 +210,7 @@ export const projects = [
     tags: ["React", "MongoDB", "NodeJs","Tailwind Css"],
     github: "https://github.com/vishalmishraa/mern-estate",
     webapp: "https://fydh.vishalmishra.tech",
-  },
-  {
-    id: 2,
-    title: "Ascii Art",
-    description:
-    `I contributed to this ASCII-ART C++ Library. This is a C++ library for generating ASCII art in various fonts and
-    styles. It is a port of the popular Python library of the same name.Allows users to print characters and letters in
-    different styles, such as bold, italic, and underlined. Provides a simple and easy-to-use APIs.` ,
-    image: "https://raw.githubusercontent.com/vishalmishraa/ascii-art/main/logo%20(1).png",
-    tags: ["C++"],
-    github: "https://github.com/vishalmishraa/ascii-art",
-    webapp: "https://github.com/vishalmishraa/ascii-art",
-    
-  },
+  }
+  
   
 ];
